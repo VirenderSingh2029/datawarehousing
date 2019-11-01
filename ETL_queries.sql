@@ -375,6 +375,7 @@ THEN DELETE
 OUTPUT  $action, SRC.match_id, SRC.inning, SRC.over_no, SRC.ball into Log_ETL_Delivery_F;
 
 
+
 SELECT MergeAction, count(*)
 FROM   Log_ETL_Delivery_F
 GROUP BY MergeAction;
